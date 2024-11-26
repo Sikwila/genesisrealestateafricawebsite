@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+:root {
+  --mainColor1: #7FAF1D; 
+  --mainColor2: #6D9A1A; 
+}
+
+/* Home section styling */
+#home {
+  padding: 30px 95px;
+}
+
+.home-img img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 570px; /* Keeps original width up to a maximum */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 30px;
+}
+
+.homecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Vertically centers the content */
+  gap:30px; /* Space between the image and text */
+}
+
+#home h1 {
+  font-size: 3.2rem;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#home h2 {
+  font-size: 1.5rem;
+}
+
+.hometext h3 {
+  margin-top: 37px;
+}
+
+.hometext span {
+  color: #7faf1d;
+}
+
+.lowertext {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home-btn {
+  width: 120px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border-radius: 9px;
+  background-color: transparent;
+  border: 2px solid #7faf1d;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 7px;
+}
+
+.home-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-btn:hover {
+  background-color: #7faf1d; /* Changes background color on hover */
+  color: #fff; /* Ensures text color stays white */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .homecontainer {
+    flex-direction: column; /* Stack the image and text on smaller screens */
+    align-items: center;
+  }
+
+  .home-img img {
+    max-width: 100%; /* Ensures the image takes full width on smaller screens */
+  }
+
+  #home h1 {
+    font-size: 2.5rem; 
+  }
+
+  #home h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
