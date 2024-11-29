@@ -885,6 +885,13 @@ nav.navbar .navbar-nav .nav-link {
     font-weight: bolder;
     font-style: normal;
     color: #4b4a4a;
+    @media (max-width:767px) {
+        padding: 2px 23px;
+        padding-bottom: 10px;
+    }  
+    @media (max-width:500px) {
+        font-size:2rem;
+    } 
   }
 
   .homecontainer p {
@@ -1399,3 +1406,9 @@ nav.navbar .navbar-nav .nav-link {
 }
 
 /* End Mobile Media */
+.lowertext,.hometext h2{
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
